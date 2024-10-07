@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text</title>
+    <link rel="stylesheet" href="Assets/Css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech to Text Converter</h1>
+
+        <label for="language-select">Select Language:</label>
+        <select id="language-select">
+            <option value="en-US">English (United States)</option>
+            <option value="fa-IR">Persian (فارسی)</option>
+            <option value="en-GB">English (United Kingdom)</option>
+            <option value="es-ES">Spanish (Spain)</option>
+            <option value="es-MX">Spanish (Mexico)</option>
+            <option value="fr-FR">French (France)</option>
+            <option value="de-DE">German (Germany)</option>
+            <option value="it-IT">Italian (Italy)</option>
+            <option value="ja-JP">Japanese</option>
+            <option value="ko-KR">Korean</option>
+            <option value="zh-CN">Chinese (Mandarin)</option>
+            <option value="ru-RU">Russian</option>
+            <option value="ar-SA">Arabic (Saudi Arabia)</option>
+        </select>
+
+        <button id="start-btn">Start Recording</button>
+
+        <div class="output-container">
+            <p id="output">The converted text will appear here</p>
+            <button id="copy-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24">
+                    <path d="M180 936q-24 0-42-18t-18-42V336h60v540h440v60H180Zm120-120q-24 0-42-18t-18-42V216q0-24 18-42t42-18h440q24 0 42 18t18 42v540q0 24-18 42t-42 18H300Zm0-60h440V216H300v540ZM300 216v540-540Z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="Assets/JavaScript/script.js"></script>
+</body>
+</html>
